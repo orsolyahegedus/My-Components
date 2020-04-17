@@ -1,0 +1,1 @@
+Ez egy egyszerű oldafooter, amit a Codberryben sajátítottam el.
