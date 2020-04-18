@@ -1,0 +1,77 @@
+/* ==== GENERAL STYLES ==== */
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgba(0,0,0,.9);
+  padding: 1rem;
+}
+
+/* ==== POSITIONING ==== */
+
+nav a {
+  color: white;
+  font-family: 'Space Mono', monospace;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+/* ==== STYLING ==== */
+.signup {
+  border-radius: 9999px;
+  border: 1px solid hsla(0,0%,100%,.2);
+}
+
+p {
+  font-size: 1rem;
+  font-family: 'Space Mono', monospace;
+  text-align: justify;
+  padding: 1rem;
+}
+
+/* ==== HOVER ==== */
+.hov1:hover {
+  color: hsl(0, 0%, 77%);
+  transition: color .15s ease-in-out;
+}
+
+.hov2:hover {
+  color: #000;
+  background-color: #fff;
+  transition: background-color .15s ease-in-out;
+}
+
+/* ==== media query ==== */
+@media (min-width: 768px) {
+ nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  nav a {
+    float: right;
+  }
+
+  .home {
+    float: left;
+  }
+  /* Clearfix */
+    nav::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  body {
+    width: 60%;
+    margin: 5.25rem auto 1.25rem;
+  }
+p {
+  margin-bottom: 1.25rem;
+  padding: .5rem;
+}
+}
